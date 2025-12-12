@@ -1,0 +1,127 @@
+.section {
+    padding: 6rem 2rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    gap: 4rem;
+    align-items: flex-start;
+}
+
+.leftContent {
+    flex: 1;
+    position: sticky;
+    top: 2rem;
+}
+
+.label {
+    text-transform: uppercase;
+    color: #9CA3AF;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+    display: block;
+    font-size: 1.25rem;
+}
+
+.headline {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.highlight {
+    text-decoration: underline;
+    text-decoration-color: var(--color-secondary);
+    text-underline-offset: 8px;
+    text-decoration-thickness: 4px;
+}
+
+.description {
+    color: var(--color-text-body);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.rightContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.cardIcon {
+    width: 80px;
+    height: 80px;
+    /* background-color: #F3F4F6; */
+    border-radius: 0.5rem;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* color: #9CA3AF; */
+    font-size: 0.75rem;
+}
+.img{
+    height: 100px;
+}
+.cardContent {
+    flex: 1;
+}
+
+.cardTitle {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-text-main);
+    margin-bottom: 0.75rem;
+}
+
+.cardText {
+    color: var(--color-text-body);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.listItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-text-body);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--color-text-body);
+    border-radius: 50%;
+}
+
+@media (max-width: 1024px) {
+    .section {
+        flex-direction: column;
+    }
+
+    .leftContent {
+        position: static;
+        margin-bottom: 2rem;
+    }
+}
