@@ -24,8 +24,9 @@ export default function Hero() {
             <path d="M10 40 C 30 40, 50 10, 90 10 M 80 5 L 90 10 L 85 20" stroke="#6B46C1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </div>
-        <Button>Discuss Your Requirements</Button>
+        <Button className={styles.BottomButton}>Discuss Your Requirements</Button>
       </div>
+       
       <div className={styles.imageContainer}>
         <div className={styles.image} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#9CA3AF' }}>
           <Image

@@ -51,7 +51,7 @@ export default function Snapshots() {
           </span>
         </h2>
       </div>
-
+ 
       <div className={styles.container}>
         <div className={styles.imageGrid}>
           {images.map((i) => (
@@ -66,6 +66,7 @@ export default function Snapshots() {
         </div>
 
         <div className={styles.contentList}>
+          
           {items.map((item, index) => (
             <div key={index} className={styles.item}>
               <h3 className={styles.itemTitle}>{item.title}</h3>

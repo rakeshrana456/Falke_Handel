@@ -17,8 +17,9 @@ export default function Header() {
           <Image
           alt='logo'
           src="/assets/Logo/FalkeLogo.png"
-          height={50}
-          width={70}
+          height={60}
+          width={100}
+          // className='width:"100%"'
           />
 
         </span>
@@ -55,7 +56,7 @@ export default function Header() {
         </Link>
       </nav>
 
-      <Button>Discuss Your Requirements</Button>
+      <Button >Discuss Your Requirements</Button>
     </header>
   );
 }

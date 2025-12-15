@@ -8,10 +8,11 @@
     font-size: 1rem;
     transition: all 0.2s ease;
     cursor: pointer;
+    font-family: var(--font-figtree), sans-serif;
 }
 
 .primary {
-    background-color: var(--color-primary);
+    background-color: var(--color-primary-dark);
     color: var(--color-white);
     box-shadow: 0 4px 6px -1px rgba(107, 70, 193, 0.2), 0 2px 4px -1px rgba(107, 70, 193, 0.1);
 }

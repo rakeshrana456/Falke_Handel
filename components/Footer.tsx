@@ -13,7 +13,7 @@ export default function Footer() {
                            src="/assets/Logo/FalkeLogoWhite.png"
                            alt='logo'
                            height={60}
-                           width={60}
+                           width={100}
                            />
                     </div>
                     <a href="mailto:info@falkehandel.de" className={styles.email}>info@falkehandel.de</a>

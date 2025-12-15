@@ -13,14 +13,29 @@ const values = [
     number: "01",
     title: "Sustainability",
     icon: SustainabilityIcon,
-    description: `
-      We believe that growth and responsibility must go hand in hand.
-      Sustainability guides how we design our processes, from thoughtful material
-      choices to efficient production cycles and reduced waste practices.
-      Our approach focuses on long-term value, durability, and conscious decision making
-      at every stage of the export journey. By prioritizing sustainability,
-      we support businesses that want to scale while remaining environmentally responsible.
-    `,
+   description: (
+  <>
+    <p>We believe that growth and responsibility must go hand in hand.</p>
+
+    <p>Sustainability</p>
+
+    <p>
+      guides how we design our processes, from thoughtful material choices to
+      efficient production cycles and reduced waste practices.
+    </p>
+
+    <p>
+      Our approach focuses on long-term value, durability, and conscious decision
+      making at every stage of the export journey.
+    </p>
+
+    <p>
+      By prioritizing sustainability, we support businesses that want to scale
+      while remaining environmentally responsible.
+    </p>
+  </>
+)
+
   },
   {
     number: "02",
@@ -93,7 +108,7 @@ export default function CoreValues() {
             {/* RIGHT TEXT BLOCK */}
             <div>
               <h3 className={styles.title}>{item.title}</h3>
-              <p className={styles.text}>{item.description}</p>
+              <div className={styles.text}>{item.description}</div>
             </div>
           </div>
         </div>

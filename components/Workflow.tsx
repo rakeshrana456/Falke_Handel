@@ -29,7 +29,7 @@ export default function Workflow() {
     const icons=[
         {
             id:"1",
-            path:"/assets/workflow4.png"
+            path:"/assets/workflow img4.png"
         },
          {
             id:"2",
