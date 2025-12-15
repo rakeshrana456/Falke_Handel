@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Hero.module.css';
 import Button from './Button';
+import Link from 'next/link';
 import Image from "next/image";
 export default function Hero() {
   return (
@@ -9,10 +10,10 @@ export default function Hero() {
         <h1 className={styles.title}>
           Global Export Solutions Across Agro,{' '}
           <span className={styles.highlightWrapper}>
+                        <img src="/assets/svg/curve.svg" alt="" className={styles.curve} />
+
             <span className={styles.highlight}>Lifestyle & Home</span>
-            <svg className={styles.underline} viewBox="0 0 100 10" preserveAspectRatio="none">
-              <path d="M0 5 Q 50 10 100 5" stroke="#6B46C1" strokeWidth="2" fill="none" />
-            </svg>
+            
           </span>
           , Commercial, and Sustainable Products
         </h1>
@@ -20,11 +21,16 @@ export default function Hero() {
           <p className={styles.description}>
             Falke Handel as a platform bridges the gap between traditional producers and emerging global markets by eliminating inefficiencies and fostering meaningful trade partnerships. Our commitment is to deliver a seamless export experience built on trust, transparency, and responsibility.
           </p>
-          <svg className={styles.arrow} viewBox="0 0 100 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <img src="/assets/svg/Doodle.svg" alt=""  className={styles.arrow}/>
+
+          {/* <svg className={styles.arrow} viewBox="0 0 100 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M10 40 C 30 40, 50 10, 90 10 M 80 5 L 90 10 L 85 20" stroke="#6B46C1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
+          </svg> */}
+          
         </div>
-        <Button className={styles.BottomButton}>Discuss Your Requirements</Button>
+                <Link href="/ui/Contact">
+
+        <Button className={styles.BottomButton}>Discuss Your Requirements</Button></Link>
       </div>
        
       <div className={styles.imageContainer}>

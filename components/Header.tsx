@@ -55,8 +55,8 @@ export default function Header() {
           Contact
         </Link>
       </nav>
-
-      <Button >Discuss Your Requirements</Button>
+        <Link href="/ui/Contact">
+      <Button>Discuss Your Requirements</Button></Link>
     </header>
   );
 }

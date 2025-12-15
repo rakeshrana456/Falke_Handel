@@ -26,14 +26,14 @@ export default function Contact() {
           <label className={styles.label}>EMAIL</label>
           <input
             type="email"
-            placeholder="name@email.com"
+            placeholder="Email"
             className={styles.input}
           />
 
           <label className={styles.label}>CONTACT NO.</label>
           <input
             type="text"
-            placeholder="876543332111"
+            placeholder="Contact no."
             className={styles.input}
           />
 

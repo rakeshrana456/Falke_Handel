@@ -59,7 +59,7 @@
   margin-bottom: 20px;
   font-size: 14px;
   outline: none;
-  color:#AAB0BC;
+  color:#3d3f43;
 }
 
 .textarea {
@@ -68,7 +68,7 @@
 }
 
 .button {
-  background: #6f42c1;
+  background: var(--color-primary-dark);;
   color: white;
   padding: 12px 25px;
   border: none;

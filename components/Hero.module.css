@@ -60,7 +60,7 @@
   position: absolute;
   bottom: -40px;
   right: 0;
-  width: 80px;
+  width: 130px;
   height: auto;
   transform: rotate(-10deg);
 }
@@ -70,6 +70,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.curve{
+  position: absolute;
+  left: -37px;
 }
 
 .image {
