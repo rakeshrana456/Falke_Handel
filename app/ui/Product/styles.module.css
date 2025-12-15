@@ -132,8 +132,9 @@
   }
 
   .mainHeading {
-    font-size: 15px;
+    font-size: 21px;
     width: 100%; /* Fix width on mobile */
+    font-weight: 700;
   }
 
   .card {
