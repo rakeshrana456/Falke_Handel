@@ -28,12 +28,12 @@ export default function WhyChooseUs() {
         </div>
         <div className={styles.iconBox}>
             
-            <Image
+          <Image
             src="/assets/Vector.png"
             alt="coreEthics"
             width={200}
             height={600}
-            style={{ width: "165px", height: "175px" }}
+            style={{ maxWidth: "100%", height: "auto" }}
             priority
           />
         </div>
@@ -43,7 +43,7 @@ export default function WhyChooseUs() {
             alt="coreEthics"
             width={200}
             height={600}
-            style={{ width: "145px", height: "175px" }}
+            style={{ maxWidth: "100%", height: "auto" }}
             priority
           />
         </div>

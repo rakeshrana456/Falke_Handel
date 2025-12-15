@@ -49,16 +49,96 @@
   color: var(--color-primary);
 }
 
+
+/* Hamburger Styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1001; /* Ensure above mobile menu */
+  padding: 0;
+}
+
+.bar {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-primary);
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hamburger Animation State */
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+.mobileButton {
+  display: none;
+}
+
+.desktopButton {
+  display: block;
+}
+
 @media (max-width: 1024px) {
-  .nav {
+  .hamburger {
+    display: flex;
+  }
+
+  .desktopButton {
     display: none;
   }
+
+  .mobileButton {
+    display: block;
+    margin-top: 1rem;
+  }
+
+  .nav {
+    display: flex; /* Changed from none to flex for mobile menu */
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff; /* Or var(--color-bg-light) */
+    padding-top: 6rem; /* Space for header/logo */
+    align-items: center;
+    gap: 2rem;
+    transform: translateX(100%); /* Slide out by default */
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+  }
+
+  .nav.navOpen {
+    transform: translateX(0); /* Slide in */
+  }
+
+  .navLink {
+    font-size: 1.5rem; /* Larger font for mobile */
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    color: #4a4a4a;
+  }
 }
-.navLink {
-  color: #4a4a4a;
-  padding: 6px 12px;
-  transition: 0.3s;
-}
+
+ 
 
 .active {
   color: #6B46C1; /* purple highlight */

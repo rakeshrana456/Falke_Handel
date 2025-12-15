@@ -118,10 +118,42 @@
 @media (max-width: 1024px) {
     .section {
         flex-direction: column;
+        padding: 4rem 2rem;
     }
 
     .leftContent {
         position: static;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .section {
+        padding: 3rem 1.5rem;
+    }
+
+    .label {
+        font-size: 32px;
+    }
+
+    .headline {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        padding: 1.5rem;
+    }
+
+    .cardIcon {
+        margin-bottom: 0.5rem;
+    }
+
+    .listItem {
+        justify-content: center; /* Center list items on mobile if card is centered */
     }
 }

@@ -128,13 +128,50 @@
 @media (max-width: 800px) {
   .offerGrid {
     grid-template-columns: 1fr;
+    gap: 15px;
   }
 
   .mainHeading {
-    font-size: 22px;
+    font-size: 15px;
+    width: 100%; /* Fix width on mobile */
   }
 
   .card {
-    flex-direction: column;
+     width: 100%; /* Fix width on mobile */
   }
+}
+
+@media (max-width: 640px) {
+    .wrapper {
+        padding: 40px 15px;
+    }
+
+    .subHeading {
+        font-size: 18px;
+    }
+
+    .offerHeading {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .offerItem {
+        font-size: 14px;
+        align-items: flex-start;
+    }
+
+    .cardContainer {
+        margin-top: 20px;
+    }
+
+    .card {
+        padding: 20px 15px;
+        flex-direction: column; /* Stack letter and content */
+        gap: 10px;
+    }
+
+    .cardLetter {
+        width: 30px;
+        height: 30px;
+    }
 }

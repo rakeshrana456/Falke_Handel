@@ -66,10 +66,42 @@
 @media (max-width: 1024px) {
     .section {
         flex-direction: column-reverse;
+        padding: 4rem 2rem;
     }
 
     .leftContent {
         width: 100%;
         max-width: 600px;
     }
+}
+
+@media (max-width: 640px) {
+    .section {
+        padding: 3rem 1.5rem;
+    }
+
+
+    .leftContent {
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .iconBox {
+        padding: 0.5rem; /* Reduce padding to give images more space */
+    }
+    .rightContent {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .description {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .label {
+        font-size: 32px;
+    }
+
 }
