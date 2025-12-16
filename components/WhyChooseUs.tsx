@@ -39,7 +39,7 @@ export default function WhyChooseUs() {
         </div>
         <div className={styles.iconBox}>
             <Image
-            src="/assets/reliability.png"
+            src="/assets/Snapshots/Vectors.png"
             alt="coreEthics"
             width={200}
             height={600}
@@ -54,7 +54,7 @@ export default function WhyChooseUs() {
         <h2 className={styles.headline}>
           By partnering with responsible vendors and audited manufacturing
           units, we ensure every product meets{" "}
-          <span className={styles.highlight}>international standards.</span>
+          <span className={styles.high}>international standards.<img src="/assets/svg/svg9359300341.svg" alt="" /></span>
         </h2>
         <p className={styles.description}>
           We are built on the pillars of Sustainability, Ethics, Quality,

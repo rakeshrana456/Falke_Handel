@@ -63,6 +63,20 @@
     margin-bottom: 1.5rem;
 }
 
+.high {
+    position: relative;
+    display: inline-block;
+}
+
+.high img {
+    position: absolute;
+    bottom: -8px; 
+    left: 0;
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+}
+
 .highlight {
     text-decoration: underline;
     text-decoration-color: var(--color-secondary);

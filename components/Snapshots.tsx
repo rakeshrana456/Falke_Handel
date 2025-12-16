@@ -28,7 +28,7 @@ export default function Snapshots() {
     },
     {
       id: "2",
-      path: "/assets/snapshot img2.png",
+      path: "/assets/Snapshots/Group 18.png",
     },
     {
       id: "3",
@@ -36,7 +36,7 @@ export default function Snapshots() {
     },
     {
       id: "4",
-      path: "/assets/snapshot img4.png",
+      path: "/assets/Snapshots/Iso.png",
     },
   ];
 
@@ -46,8 +46,17 @@ export default function Snapshots() {
         <span className={styles.label}>SNAPSHOTS</span>
         <h2 className={styles.headline}>
           We provide flexible order quantities{" "}
-          <span className={styles.highlight}>
+          <span className={styles.hig}>
             from sourcing to final delivery.
+            <img
+            src="/assets/svg/svg9359300341.svg"
+            alt="coreEthics"
+            width={200}
+            height={600}
+            style={{ maxWidth: "100%", height: "auto" }}
+            // priority
+            className={styles.highlight}
+          />
           </span>
         </h2>
       </div>

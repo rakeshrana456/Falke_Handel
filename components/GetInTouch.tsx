@@ -23,7 +23,7 @@ export default function GetInTouch() {
                 <div className={styles.content}>
                     <span className={styles.label}>GET IN TOUCH</span>
                     <h2 className={styles.headline}>
-                        Ready to <span className={styles.highlight}>Start Your Next</span> Project?
+                        Ready to <span className={styles.high}>Start Your Next<img src="/assets/svg/svg9359300341.svg" alt="" /></span> Project?
                     </h2>
                     <p className={styles.description}>
                         If you need assistance, we're here to help. Whether you're looking for more information or have any concerns, don't hesitate to reach out. Our team is ready to provide you with the support you need to make the most of your experience.

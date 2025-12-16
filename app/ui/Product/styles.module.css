@@ -29,11 +29,12 @@
 .mainHeading {
   text-align: center;
   font-size: 28px;
-  font-weight: 500;
- color: #583f99;
+  font-weight: 700;
+  color: #583f99;
   line-height: 1.2;
   margin-bottom: 50px;
   width: 50%;
+  
 }
 
 .highlightOrange {
@@ -50,16 +51,23 @@
 .offerHeading {
   font-size: 18px;
   font-weight: 600;
- color: var(--color-primary-dark);
+  text-align: left; 
+  color: var(--color-primary-dark);
   margin-bottom: 25px;
+  max-width: 800px; 
+  margin-left: auto; 
+  margin-right: auto;
+  
 }
 
 .offerGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 18px 40px;
+  gap: 25px 40px;
   margin-bottom: 50px;
-  
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .offerItem {
@@ -94,7 +102,7 @@
   border-radius: 8px;
   padding: 25px 20px;
   border: 1px solid #e1e1e1;
-  width: 50%;
+  width: 100%;
 }
 
 .cardLetter {
@@ -132,7 +140,7 @@
   }
 
   .mainHeading {
-    font-size: 21px;
+    font-size: 2rem;
     width: 100%; /* Fix width on mobile */
     font-weight: 700;
   }

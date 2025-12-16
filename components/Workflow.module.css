@@ -31,6 +31,21 @@
     margin-bottom: 2rem;
 }
 
+.high {
+    position: relative;
+    display: inline-block;
+}
+
+.high img {
+    position: absolute;
+    bottom: -8px; /* Adjust this value to position the SVG correctly below the text */
+    left: 0;
+    width: 100%;
+    height: auto;
+    pointer-events: none; /* Ensure the image doesn't interfere with text selection */
+}
+
+/* Kept for backward compatibility if any parts still use it, otherwise can be removed later */
 .highlight {
     text-decoration: underline;
     text-decoration-color: var(--color-secondary);

@@ -28,11 +28,9 @@
 }
 
 .highlight {
-    color: var(--color-primary-dark);
-    text-decoration: underline;
-    text-decoration-color: var(--color-secondary);
-    text-underline-offset: 8px;
-    text-decoration-thickness: 4px;
+   position: relative;
+   bottom: 38px;
+
 }
 
 .container {

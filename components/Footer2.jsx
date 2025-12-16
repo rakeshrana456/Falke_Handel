@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Footer2.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Footer2() {
     return (
@@ -23,7 +24,7 @@ export default function Footer2() {
                 <div className={styles.column}>
                     <h3 className={styles.heading}>Get in Touch</h3>
                     <span className={styles.text}>Phone number</span>
-                    <a href="#" className={styles.link}>Contact Form</a>
+                    <Link href="/ui/Contact" className={styles.link}>Contact Form</Link>
                     <a href="mailto:info@email.com" className={styles.link}>info@email.com</a>
                     <span className={styles.text}>00 (123) 456 78 90</span>
                 </div>
@@ -31,8 +32,8 @@ export default function Footer2() {
                 {/* Column 3: Learn More */}
                 <div className={styles.column}>
                     <h3 className={styles.heading}>Learn More</h3>
-                    <a href="#" className={styles.link}>Process</a>
-                    <a href="#" className={styles.link}>Services</a>
+                    <Link href="/" className={styles.link}>Process</Link>
+                    <Link href="/ui/Product" className={styles.link}>Services</Link>
                 </div>
 
                 {/* Column 4: Newsletter */}

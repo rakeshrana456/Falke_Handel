@@ -51,11 +51,11 @@ export default function Workflow() {
     ]
 
     return (
-        <section className={styles.section}>
+        <section className={styles.section} id="workflow">
             <div className={styles.leftContent}>
-                <span className={styles.label}>OUR WORKFLOW</span>
+                <span className={styles.label} >OUR WORKFLOW</span>
                 <h2 className={styles.headline}>
-                    The service we offer is <span className={styles.highlight}>specifically</span> designed to meet your needs.
+                    The service we offer is <span className={styles.high}>specifically<img src="/assets/svg/svg9359300341.svg" alt="" /></span> designed to meet your needs.
                 </h2>
                 <p className={styles.description}>
                     Our export process is structured to give you clarity from the first discussion to final delivery. Each stage—requirements, samples, sourcing, production, quality checks, packaging, and logistics—is managed with precision to ensure consistent results and smooth execution.
