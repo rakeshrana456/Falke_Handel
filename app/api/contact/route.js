@@ -1,41 +1,28 @@
-import nodemailer from "nodemailer";
+export const runtime = "nodejs";
 
-export const runtime = "nodejs"; // ensures Node environment for SMTP
+import nodemailer from "nodemailer";
+import { NextResponse } from "next/server";
 
 export async function POST(req) {
-    console.log("📩 /api/contact called");  
-
   try {
-    const { email, contact, message } = await req.json();
+    const { name, email, message } = await req.json();
 
-    console.log("Form data received:", { email, contact, message });
-
-    // Create transporter
     const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST,
-      port: 465,       
-      secure: true,    
-      auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASS,
-      },
+      host: "localhost",
+      port: 1025,
+      secure: false,
     });
 
-    // Prepare email
-    const mailOptions = {
-      from: `"Trustlane Contact" <${process.env.SMTP_USER}>`,
-      to: process.env.RECEIVER_EMAIL,
-      subject: "New Contact Form Submission",
-      text: `You received a new contact form submission:\n\nEmail: ${email}\nContact: ${contact}\nMessage: ${message}`,
-    };
+    await transporter.sendMail({
+      from: `"iamrakesh234@gmail.com" <no-reply@example.com>`,
+      to: "iamrakesh234@gmail.com",
+      subject: "Contact Form Message",
+      text: message,
+    });
 
-    // Send email
-    const info = await transporter.sendMail(mailOptions);
-    console.log("Email sent:", info);
-
-    return new Response(JSON.stringify({ success: true, info }), { status: 200 });
+    return NextResponse.json({ success: true });
   } catch (error) {
-    console.error("Email send error:", error);
-    return new Response(JSON.stringify({ success: false, error: error.message }), { status: 500 });
+    console.error("Mail error:", error);
+    return NextResponse.json({ success: false }, { status: 500 });
   }
 }
