@@ -28,12 +28,12 @@
 
 .mainHeading {
   text-align: center;
-  font-size: 28px;
+  font-size: 34px;
   font-weight: 700;
   color: #583f99;
   line-height: 1.2;
   margin-bottom: 50px;
-  width: 50%;
+  /* width: 50%; */
   
 }
 
@@ -120,14 +120,14 @@
 }
 
 .cardTitle {
-  font-size: 12px;
+  font-size: 17px;
   font-weight: 600;
-    color: var(--color-primary);
+    color: var(--color-primary-dark);
   margin-bottom: 8px;
 }
 
 .cardText {
-  font-size: 14px;
+  font-size: 0.91rem;
   color: #5c5c5c;
   line-height: 1.6;
 }
@@ -140,7 +140,7 @@
   }
 
   .mainHeading {
-    font-size: 2rem;
+    font-size: 28px;
     width: 100%; /* Fix width on mobile */
     font-weight: 700;
   }
@@ -156,7 +156,8 @@
     }
 
     .subHeading {
-        font-size: 18px;
+        font-size: 21px;
+        font-weight: 600;
     }
 
     .offerHeading {
@@ -177,6 +178,9 @@
         padding: 20px 15px;
         flex-direction: column; /* Stack letter and content */
         gap: 10px;
+    }
+    .cardText{
+      font-size: 0.95rem;
     }
 
     .cardLetter {

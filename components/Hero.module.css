@@ -47,10 +47,10 @@
 }
 
 .description {
-  font-size: 0.95rem;
+  font-size: 1.4rem;
   color: var(--color-text-body);
   margin-bottom: 2.5rem;
-  line-height: 29px;
+  line-height: 33px;
   font-weight: 400;
   position: relative;
 }
