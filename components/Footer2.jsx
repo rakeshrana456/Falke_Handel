@@ -23,10 +23,10 @@ export default function Footer2() {
                 {/* Column 2: Get in Touch */}
                 <div className={styles.column}>
                     <h3 className={styles.heading}>Get in Touch</h3>
-                    <span className={styles.text}>Phone number</span>
+                    {/* <span className={styles.text}>Phone number</span> */}
                     <Link href="/ui/Contact" className={styles.link}>Contact Form</Link>
-                    <a href="mailto:info@email.com" className={styles.link}>info@email.com</a>
-                    <span className={styles.text}>00 (123) 456 78 90</span>
+                    <a href="mailto:info@email.com" className={styles.link}>info@falkehandel.com</a>
+                    <span className={styles.text}>+91 8837872074</span>
                 </div>
 
                 {/* Column 3: Learn More */}

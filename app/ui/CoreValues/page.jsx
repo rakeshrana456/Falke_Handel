@@ -2,7 +2,6 @@
 import Image from "next/image";
 import styles from "./styles.module.css";
 import Footer2 from "@/components/Footer2"
-// Icons
 import SustainabilityIcon from "/public/assets/sustainability.png";
 import EthicsIcon from "/public/assets/ethics.png";
 import QualityIcon from "/public/assets/Vector.png";

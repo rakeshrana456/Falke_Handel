@@ -3,7 +3,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 60px 20px;
-  font-family: "Inter", sans-serif;
+  /* font-family: "Inter", sans-serif; */
 }
 
 /* -------- HEADINGS -------- */
@@ -18,10 +18,11 @@
 
 .mainHeading {
   text-align: center;
-  font-size: 32px;
+  font-size: 44px;
   font-weight: 700;
   line-height: 1.4;
-  color: #5A2EA6;
+     color: var(--color-primary-dark);
+
   margin-bottom: 40px;
 }
 

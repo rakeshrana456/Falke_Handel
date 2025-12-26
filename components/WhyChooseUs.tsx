@@ -17,7 +17,7 @@ export default function WhyChooseUs() {
           />
         </div>
         <div className={styles.iconBox}>
-             <Image
+            <Image
             src="/assets/ethics.png"
             alt="coreEthics"
             width={200}
