@@ -17,7 +17,7 @@ export default function Footer2() {
                            width={100}
                            />
                     </div>
-                    <a href="mailto:info@falkehandel.de" className={styles.email}>info@falkehandel.de</a>
+                    <a href="mailto:info@falkehandel.com" className={styles.email}>info@falkehandel.com</a>
                 </div>
 
                 {/* Column 2: Get in Touch */}
@@ -25,7 +25,7 @@ export default function Footer2() {
                     <h3 className={styles.heading}>Get in Touch</h3>
                     {/* <span className={styles.text}>Phone number</span> */}
                     <Link href="/ui/Contact" className={styles.link}>Contact Form</Link>
-                    <a href="mailto:info@email.com" className={styles.link}>info@falkehandel.com</a>
+                    <a href="info@falkehandel.com" className={styles.link}>info@falkehandel.com</a>
                     <span className={styles.text}>+91 8837872074</span>
                 </div>
 
